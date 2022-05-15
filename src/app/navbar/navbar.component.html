@@ -1,0 +1,30 @@
+<mat-toolbar>
+   
+    <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
+
+    <div class="spacer"></div>
+  
+    <ng-container *ngIf="(loggedInUser); else asdasd">
+        <a mat-button (click)="logout()">Logout</a>
+    </ng-container>
+
+    <a mat-button routerLink='/home'>Home</a>
+    <a mat-button routerLink='/cart'>Cart</a>
+    <a mat-button routerLink='/aboutus'>About Us</a>
+    <ng-template #asdasd>
+        <a mat-button routerLink='/login'>Login</a>
+    </ng-template>
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <mat-nav-list>
+            <a (click)="onSave('Póló')" mat-list-item>Póló</a>
+            <a (click)="onSave('Farmer')" mat-list-item>Farmer</a>
+            <a (click)="onSave('Nadrág')" value="trousers" mat-list-item>Nadrág</a>
+            <a (click)="onSave('Dzseki')" value="jacket" mat-list-item>Dzseki</a>
+            <a (click)="onSave('Cipő')" value="shoes" mat-list-item>Cipő</a>
+        </mat-nav-list>
+    </mat-sidenav>
+ 
+</mat-sidenav-container>

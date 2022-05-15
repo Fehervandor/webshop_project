@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+<table>
+    <tr>
+      <th>Termék</th>
+      <th>Ár</th> 
+      <th>Termék mennyiség</th>
+    </tr>
+    <tr *ngFor="let num of orders">
+      <td><img src="{{num.photo}}"></td>
+      <td>{{num.cost}}</td> 
+      <td>(Under developing)</td>
+    </tr>
+  </table>
+

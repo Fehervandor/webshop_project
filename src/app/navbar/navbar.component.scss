@@ -1,0 +1,23 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+mat-toolbar {
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+mat-sidenav-container {
+    padding-top: 70px;
+  }
+
+mat-sidenav {
+    position: fixed;
+    width: 250px;
+}
+
+mat-nav-list {
+    padding-top: 70px;
+}

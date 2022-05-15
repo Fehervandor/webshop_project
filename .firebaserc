@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webfejl-c4889": {
+      "hosting": {
+        "webshop": [
+          "webfejl-c4889"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webfejl-c4889"
+  }
+}
